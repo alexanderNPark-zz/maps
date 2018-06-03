@@ -118,7 +118,6 @@ def find_predictor(user, restaurants, feature_fn):
 
     def predictor(restaurant):
         return b * feature_fn(restaurant) + a
-
     return predictor, r_squared
 
 
