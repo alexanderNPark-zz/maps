@@ -68,6 +68,7 @@ def k_means(restaurants, k, max_updates=100):
     """Use k-means to group restaurants by location into k clusters."""
     assert len(restaurants) >= k, 'Not enough restaurants to cluster'
     old_centroids, n = [], 0
+
     # Select initial centroids randomly by choosing k different restaurants
     centroids = [restaurant_location(r) for r in sample(restaurants, k)]
 
